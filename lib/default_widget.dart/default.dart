@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
 class Default extends StatelessWidget {
-  final String? text;
+  final Widget? child;
   final Color color;
   final double width;
   final double height;
   final Alignment contentAlignment;
+  final BorderRadius rad;
 
   const Default({
     super.key,
-    this.text,
+    this.child,
     this.width = 100,
-    this.height = 250,
+    this.height = 150,
     this.color = Colors.grey,
     this.contentAlignment = Alignment.center,
+    this.rad = const BorderRadius.all(Radius.circular(10)),
   });
 
   @override
@@ -22,9 +24,10 @@ class Default extends StatelessWidget {
       width: width,
       height: height,
       color: color,
+
       child: Align(
         alignment: contentAlignment,
-        child: Text(text ?? ''),
+        child: child,
       ),
     );
   }
