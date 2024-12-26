@@ -156,19 +156,6 @@ class _AboutPageState extends State<AboutPage> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.tealAccent,
-        child: const Icon(Icons.save, color: Colors.black),
-        onPressed: () {
-          // Save changes
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Changes saved successfully!'),
-              backgroundColor: Colors.tealAccent,
-            ),
-          );
-        },
-      ),
     );
   }
 }
