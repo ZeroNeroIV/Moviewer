@@ -3,5 +3,7 @@
         "cupertino",
         "myapp",
         "Schyler"
-    ]
+    ],
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }
